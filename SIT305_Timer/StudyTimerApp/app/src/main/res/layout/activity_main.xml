@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Timer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Chronometer
+        android:id="@+id/Chronometer"
+        android:layout_width="175dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="118dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LastTimerRecord" />
+
+    <ImageButton
+        android:id="@+id/PlayButton"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="onPlayClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Chronometer"
+        app:srcCompat="@drawable/playbutton"
+        tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/PauseButton"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="41dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="onPauseClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/EndButton"
+        app:layout_constraintStart_toEndOf="@+id/PlayButton"
+        app:layout_constraintTop_toBottomOf="@+id/Chronometer"
+        app:srcCompat="@drawable/pausebutton" />
+
+    <ImageButton
+        android:id="@+id/EndButton"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="onEndClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Chronometer"
+        app:srcCompat="@drawable/stopbutton" />
+
+    <TextView
+        android:id="@+id/LastTimerRecord"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="61dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TaskType"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="97dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_task_type"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PauseButton" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="173dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="96dp"
+        android:text="@string/enter_your_task"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

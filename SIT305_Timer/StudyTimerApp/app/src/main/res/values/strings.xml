@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Study Timer App</string>
+    <string name="enter_your_task">Enter your task:</string>
+    <string name="enter_task_type">Enter Task Type</string>
+    <string name="textview">TextView</string>
+</resources>
