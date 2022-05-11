@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            LastTimerRecord.setText("You have recorded " + time.toString() + " on " + TaskType.getText().toString() + "  last timer!");
+            LastTimerRecord.setText("You have recorded " + time.toString() + " on " + TaskType.getText().toString() + " last timer!");
         }
     }
 
